@@ -38,7 +38,7 @@ Languages: also available in english;
 
 = How to use =
 
-Inside a post or page, before the text to hide write:
+Inside a post or page, before the text to hide, write:
 [coupon code="CODE" label="QUERY"]
 
 code = "CODE" replace CODE with the secret code you want to use
