@@ -28,21 +28,6 @@ You can share the password how you prefer. The password is not nominative.
 
 Languages: also available in english;
 
-== How to use ==
-
-Inside a post or page write: 
-
-before the text to hide
-[coupon code="CODE" label="QUERY"]
-
-code = "CODE" replace CODE with the secret code you want to use
-laber = "QUERY" replace QUERY with the question that you want to appear
-
-After writing the text to hide
-[/coupon]
-
-Before and after these shortcode you can write what you want. The text can see it all.
-
 == Installation ==
 
 * Upload the files on the plugins section of your Wordpress;
@@ -50,6 +35,20 @@ Before and after these shortcode you can write what you want. The text can see i
 * Create a new page/post and watch the option at the end of the page.
 
 == Frequently Asked Questions ==
+
+= How to use =
+
+Inside a post or page, before the text to hide write:
+[coupon code="CODE" label="QUERY"]
+
+code = "CODE" replace CODE with the secret code you want to use
+laber = "QUERY" replace QUERY with the question that you want to appear
+
+After text to hide write:
+[/coupon]
+
+Before and after these shortcode you can write what you want. The text can see it all.
+
 
 Look at the frequently ask questions here and contact us for any information:
 
