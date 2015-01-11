@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: membership, coupon, reserved area
 Requires at least: 3.2
 Tested up to: 3.6
-Stable tag: 1.2
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,6 +15,7 @@ Show hidden contents to members
 Give access to exclusive contents only for your members.
 
 A member can be a person who:
+
 * belongs to your mailing list;
 * has followed your webinar;
 * works with you;
@@ -39,13 +40,13 @@ Languages: also available in english;
 = How to use =
 
 Inside a post or page, before the text to hide, write:
-[coupon code="CODE" label="QUERY"]
+[inmember code="CODE" label="QUERY"]
 
 code = "CODE" replace CODE with the secret code you want to use
 laber = "QUERY" replace QUERY with the question that you want to appear
 
 After text to hide write:
-[/coupon]
+[/inmember]
 
 Before and after these shortcode you can write what you want. The text can see it all.
 
@@ -59,6 +60,12 @@ Look at the frequently ask questions here and contact us for any information:
 
 
 == Changelog ==
+
+= 1.1 =
+
+* Reporting wrong passord
+* Change shortcode 'coupon' with 'inmember'
+* After entered the password is not reload the page
 
 = 1.0 =
 Initial revision

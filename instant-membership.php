@@ -4,7 +4,7 @@
   Plugin Name: Instant Membership
   Plugin URI: http://www.ninjapress.net/instant-membership/
   Description: Show hidden contents to members
-  Version: 1.0
+  Version: 1.1
   Author: Ninja Press
   Author URI: http://www.ninjapress.net
   License: GPL2
@@ -33,21 +33,22 @@ if (class_exists('WP_Instant_membership')) {
 
    if (isset($wp_instant_membership)) {
 
-
       function coupon($atts, $content = null) {
+         wp_enqueue_script('script', plugins_url('js/im.js', __FILE__), array('jquery'), time(), true);
+
+         ob_start();
+         include(sprintf("%s/templates/form.php", dirname(__FILE__)));
+         $string = ob_get_clean();
          
-         if (array_key_exists('coupon', $_GET) and array_key_exists('code', $atts) and ($_GET['coupon'] == $atts['code'])) {
-            return $content;
-         } else {
+         $string .= "<script>im_code = '{$atts['code']}'</script>";
 
-            ob_start();
-            include(sprintf("%s/templates/form.php", dirname(__FILE__)));
-            $string = ob_get_clean();
+         $string .= '<div id="im-content" style="display: none;">';
+         $string .= $content;
+         $string .= '</div>';
 
-            return $string;
-         }
+         return $string;
       }
 
-      add_shortcode('coupon', 'coupon');
+      add_shortcode('inmember', 'coupon');
    }
 }   
