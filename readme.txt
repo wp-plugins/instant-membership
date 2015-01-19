@@ -14,6 +14,8 @@ Show hidden contents to members
 
 Give access to exclusive contents only for your members.
 
+[vimeo https://vimeo.com/116851256]
+
 A member can be a person who:
 
 * belongs to your mailing list;
